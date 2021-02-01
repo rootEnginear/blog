@@ -14,7 +14,5 @@
 
 {% page-ref page="sta2-fundamental-counting-principle.md" %}
 
-
-
-
+{% page-ref page="sta3-permutation-combination.md" %}
 
