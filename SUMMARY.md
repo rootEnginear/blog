@@ -9,3 +9,7 @@
   * [\[STA2\] Fundamental Counting Principle](my-subjects/stats/sta2-fundamental-counting-principle.md)
   * [\[STA3\] Permutation, Combination](my-subjects/stats/sta3-permutation-combination.md)
 
+## โน้ตดนตรี <a id="scores"></a>
+
+* [🎹 ดึงดัน — Cocktail X ตั๊ก ศิริพร](scores/duengdan.md)
+
