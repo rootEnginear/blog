@@ -140,7 +140,7 @@ $$
 {% hint style="warning" %}
 **ปัญหา 1:** จากกราฟที่กำหนด
 
-![](../../.gitbook/assets/a.jpg) 
+![](../../.gitbook/assets/stats-sta2-1.jpg) 
 
 จะมีเส้นทางจากกรุงเทพฯ ไปหนองคายทั้งหมดกี่เส้นทาง?
 {% endhint %}
