@@ -7,4 +7,5 @@
 * [📊 Statistic for Engineers](my-subjects/stats/README.md)
   * [\[STA1\] Experiment, Sample Space, Event](my-subjects/stats/sta1-experiment-sample-space-event.md)
   * [\[STA2\] Fundamental Counting Principle](my-subjects/stats/sta2-fundamental-counting-principle.md)
+  * [\[STA3\] Permutation, Combination](my-subjects/stats/sta3-permutation-combination.md)
 
