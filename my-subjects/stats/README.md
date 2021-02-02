@@ -16,3 +16,7 @@
 
 {% page-ref page="sta3-permutation-combination.md" %}
 
+{% page-ref page="sta4-probability.md" %}
+
+{% page-ref page="sta5-properties-of-probability.md" %}
+
