@@ -12,6 +12,7 @@
   * [\[STA5\] Properties of Probability](my-subjects/stats/sta5-properties-of-probability.md)
 * [⚛️ Quantum Programming and Computing](my-subjects/quantum/README.md)
   * [\[QPC1\] Quantum Overview](my-subjects/quantum/qpc1-quantum-overview.md)
+  * [\[QPC2\] Basic Components of Computation](my-subjects/quantum/qpc2-basic-components-of-computation.md)
 
 ## โน้ตดนตรี <a id="scores"></a>
 

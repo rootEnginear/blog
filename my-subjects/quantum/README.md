@@ -12,3 +12,5 @@
 
 {% page-ref page="qpc1-quantum-overview.md" %}
 
+{% page-ref page="qpc2-basic-components-of-computation.md" %}
+
