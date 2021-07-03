@@ -18,9 +18,9 @@
 
 * [🎹 ดึงดัน — Cocktail X ตั๊ก ศิริพร](scores/duengdan.md)
 
-## ยังไม่รู้จะจัดเป็นหมวดอะไรดี :/
+## ยังไม่รู้จะจัดเป็นหมวดอะไรดี :/ <a id="etc"></a>
 
-* [🤞 It worked yesterday](undefined/it-worked-yesterday/README.md)
-  * [Focus, Focus-within, Focus-visible](undefined/it-worked-yesterday/focus-focus-within-focus-visible.md)
-  * [usePrefersDarkTheme](undefined/it-worked-yesterday/useprefersdarktheme.md)
+* [🤞 It worked yesterday](etc/it-worked-yesterday/README.md)
+  * [Focus, Focus-within, Focus-visible](etc/it-worked-yesterday/focus-focus-within-focus-visible.md)
+  * [usePrefersDarkTheme](etc/it-worked-yesterday/useprefersdarktheme.md)
 
