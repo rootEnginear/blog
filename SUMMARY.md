@@ -2,7 +2,7 @@
 
 * [🦄 Howdy!](README.md)
 
-## เรื่องที่ฉันเรียนในมหาวิทยาลัย <a id="my-subjects"></a>
+## เรื่องที่ฉันเรียนในมหาวิทยาลัย <a href="#my-subjects" id="my-subjects"></a>
 
 * [📊 Statistic for Engineers](my-subjects/stats/README.md)
   * [\[STA1\] Experiment, Sample Space, Event](my-subjects/stats/sta1-experiment-sample-space-event.md)
@@ -14,13 +14,6 @@
   * [\[QPC1\] Quantum Overview](my-subjects/quantum/qpc1-quantum-overview.md)
   * [\[QPC2\] Basic Components of Computation](my-subjects/quantum/qpc2-basic-components-of-computation.md)
 
-## โน้ตดนตรี <a id="scores"></a>
+## โน้ตดนตรี <a href="#scores" id="scores"></a>
 
 * [🎹 ดึงดัน — Cocktail X ตั๊ก ศิริพร](scores/duengdan.md)
-
-## ยังไม่รู้จะจัดเป็นหมวดอะไรดี :/ <a id="etc"></a>
-
-* [🤞 It worked yesterday](etc/it-worked-yesterday/README.md)
-  * [Focus, Focus-within, Focus-visible](etc/it-worked-yesterday/focus-focus-within-focus-visible.md)
-  * [usePrefersDarkTheme](etc/it-worked-yesterday/useprefersdarktheme.md)
-
