@@ -13,6 +13,8 @@
 * [⚛ Quantum Programming and Computing](my-subjects/quantum/README.md)
   * [\[QPC1\] Quantum Overview](my-subjects/quantum/qpc1-quantum-overview.md)
   * [\[QPC2\] Basic Components of Computation](my-subjects/quantum/qpc2-basic-components-of-computation.md)
+* [🕹 Human Computer Interaction](my-subjects/hci/README.md)
+  * [\[HCI1\] Human](my-subjects/hci/hci1-human.md)
 
 ## โน้ตดนตรี <a href="#scores" id="scores"></a>
 
