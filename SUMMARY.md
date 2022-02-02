@@ -20,3 +20,9 @@
 ## โน้ตดนตรี <a href="#scores" id="scores"></a>
 
 * [🎹 ดึงดัน — Cocktail X ตั๊ก ศิริพร](scores/duengdan.md)
+
+## Contacts
+
+* [Portfolio](https://rootenginear.github.io)
+* [LinkedIn](https://www.linkedin.com/in/suthep-ch/)
+* [GitHub](https://github.com/rootEnginear)
