@@ -15,6 +15,7 @@
   * [\[QPC2\] Basic Components of Computation](my-subjects/quantum/qpc2-basic-components-of-computation.md)
 * [🕹 Human Computer Interaction](my-subjects/hci/README.md)
   * [\[HCI1\] Human](my-subjects/hci/hci1-human.md)
+  * [\[HCI2\] Computer](my-subjects/hci/hci2-computer.md)
 
 ## โน้ตดนตรี <a href="#scores" id="scores"></a>
 

@@ -8,3 +8,7 @@
 [hci1-human.md](hci1-human.md)
 {% endcontent-ref %}
 
+{% content-ref url="hci2-computer.md" %}
+[hci2-computer.md](hci2-computer.md)
+{% endcontent-ref %}
+
