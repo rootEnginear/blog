@@ -13,9 +13,13 @@
 * [⚛ Quantum Programming and Computing](my-subjects/quantum/README.md)
   * [\[QPC1\] Quantum Overview](my-subjects/quantum/qpc1-quantum-overview.md)
   * [\[QPC2\] Basic Components of Computation](my-subjects/quantum/qpc2-basic-components-of-computation.md)
-* [🕹 Human Computer Interaction](my-subjects/hci/README.md)
-  * [\[HCI1\] Human](my-subjects/hci/hci1-human.md)
-  * [\[HCI2\] Computer](my-subjects/hci/hci2-computer.md)
+* [🕹 Human Computer Interaction](my-subjects/hci.md)
+
+## Quantum computing simulator <a href="#qsim" id="qsim"></a>
+
+* [\[HCI1\] Human](qsim/hci1-human.md)
+* [🛸 อยากรู้พื้นฐาน Quantum Computing? งั้นก็ลองสร้างมันขึ้นมาสิ!](qsim/quantum-computing/README.md)
+  * [\[HCI2\] Computer](qsim/quantum-computing/hci2-computer.md)
 
 ## โน้ตดนตรี <a href="#scores" id="scores"></a>
 

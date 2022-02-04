@@ -1,0 +1,93 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="96" height="56" viewBox="-4 -4 96 56" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff">
+  <style>
+    @import url("https://cdn.jsdelivr.net/gh/rootEnginear/Qemmet/fonts/fonts.css");
+
+    :root {
+      --line-color: #222222;
+      --font-color: #222222;
+      --background-color: #ffffff;
+      --gate-background-color: #ffffff;
+    }
+
+    text {
+      fill: var(--font-color);
+      font-family: LMR, LMM, 'Latin Modern Roman', 'Latin Modern Math', 'Computer Modern', serif;
+      font-style: oblique;
+    }
+
+    tspan {
+      font-style: normal;
+    }
+
+    text.params {
+      font-size: 0.625rem;
+      font-style: normal;
+    }
+
+    text[stroke-width] {
+      stroke: var(--background-color);
+    }
+  </style>
+
+  <text x="16" y="16" dominant-baseline="middle" text-anchor="middle">q<tspan dy="7" dx="1" font-size=".7em">0</tspan></text><line x1="32" y1="16" x2="88" y2="16" stroke="var(--line-color)" stroke-width="1" />
+  
+  <use href="#gate" x="44" y="0" width="32" height="32"></use><text x="59" y="18" dominant-baseline="middle" text-anchor="middle">I</text>
+
+  <symbol id="gate" width="32" height="32" viewBox="0 0 32 32">
+    <rect x="1.5" y="1.5" width="29" height="29" fill="var(--gate-background-color)" stroke="var(--line-color)" />
+  </symbol>
+
+  <symbol id="measure" width="32" height="32" viewBox="0 0 32 32">
+    <use href="#gate" x="0" y="0" width="32" height="32"></use>
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M26.8182 26H25.8182C25.8182 20.5274 21.3817 16.0909 15.9091 16.0909C10.4365 16.0909 6 20.5274 6 26L5 26C5 19.9751 9.88417 15.0909 15.9091 15.0909C21.934 15.0909 26.8182 19.9751 26.8182 26Z"
+      fill="var(--line-color)" />
+    <path d="M15.9091 26L25 6" stroke="var(--line-color)" />
+  </symbol>
+
+  <symbol id="sw" width="32" height="32" viewBox="0 0 32 32">
+    <path d="M6 6L26 26M26 6L6 26" stroke="var(--line-color)"/>
+  </symbol>
+
+  <symbol id="control" width="32" height="32" viewBox="0 0 32 32">
+    <circle cx="16" cy="16" r="4" fill="var(--line-color)"/>
+  </symbol>
+
+  <symbol id="neg_control" width="32" height="32" viewBox="0 0 32 32">
+    <circle cx="16" cy="16" r="3.5" fill="var(--background-color)" stroke="var(--line-color)"/>
+  </symbol>
+
+  <symbol id="arrow" width="10" height="8" viewBox="0 0 10 8">
+    <path d="M0 0L5 8L10 0H0Z" fill="var(--line-color)"/>
+  </symbol>
+
+  <symbol id="target" width="32" height="32" viewBox="0 0 32 32">
+    <circle cx="16" cy="16" r="11.5" fill="var(--background-color)" stroke="var(--line-color)"/>
+    <path d="M16 4V28M28 16H4" stroke="var(--line-color)"/>
+  </symbol>
+
+  <symbol id="sx" width="32" height="32" viewBox="0 0 32 32">
+    <use href="#gate" x="0" y="0" width="32" height="32"></use>
+    <path d="M9.82662 20.838L7.69534 16.1274C7.61057 15.9337 7.55002 15.9337 7.51369 15.9337C7.50158 15.9337 7.44104 15.9337 7.30783 16.0306L6.15742 16.9024C6 17.0235 6 17.0599 6 17.0962C6 17.1567 6.03633 17.2294 6.1211 17.2294C6.19375 17.2294 6.39962 17.0599 6.53282 16.963C6.60548 16.9024 6.78712 16.7692 6.92033 16.6724L9.30591 21.9158C9.39067 22.1095 9.45122 22.1095 9.56021 22.1095C9.74185 22.1095 9.77818 22.0369 9.86295 21.8674L15.3607 10.4844C15.4454 10.3148 15.4454 10.2664 15.4454 10.2422C15.4454 10.1211 15.3486 10 15.2033 10C15.1064 10 15.0216 10.0605 14.9247 10.2543L9.82662 20.838Z" fill="var(--font-color)"/>
+    <path d="M26 10H15.2073V10.4844H26V10Z" fill="var(--font-color)"/>
+    <text x="19.5" y="18.5" dominant-baseline="middle" text-anchor="middle" font-size=".7em">X</text>
+  </symbol>
+
+  <symbol id="sdg" width="32" height="32" viewBox="0 0 32 32">
+    <use href="#gate" x="0" y="0" width="32" height="32"></use>
+    <text x="16" y="20" dominant-baseline="middle" text-anchor="middle">S<tspan dy="-6" dx="1" font-size=".7em">†</tspan></text>
+  </symbol>
+
+  <symbol id="tdg" width="32" height="32" viewBox="0 0 32 32">
+    <use href="#gate" x="0" y="0" width="32" height="32"></use>
+    <text x="16" y="20" dominant-baseline="middle" text-anchor="middle">T<tspan dy="-6" dx="1" font-size=".7em">†</tspan></text>
+  </symbol>
+
+  <symbol id="reset" width="32" height="32" viewBox="0 0 32 32">
+    <use href="#gate" x="0" y="0" width="32" height="32"></use>
+    <path d="M7.25 6V26" stroke="var(--font-color)"/>
+    <path d="M21.3409 6L25.4318 16L21.3409 26" fill="none" stroke="var(--font-color)"/>
+    <text x="15.5" y="18" dominant-baseline="middle" text-anchor="middle" style="font-style:normal;font-size:1.15em">0</text>
+  </symbol>
+</svg>
