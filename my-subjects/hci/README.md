@@ -4,11 +4,11 @@
 
 ## :books: เนื้อหาการเรียน
 
-{% content-ref url="../qsim/hci1-human.md" %}
-[hci1-human.md](../qsim/hci1-human.md)
+{% content-ref url="hci1-human.md" %}
+[hci1-human.md](hci1-human.md)
 {% endcontent-ref %}
 
-{% content-ref url="../qsim/quantum-computing/hci2-computer.md" %}
-[hci2-computer.md](../qsim/quantum-computing/hci2-computer.md)
+{% content-ref url="hci2-computer.md" %}
+[hci2-computer.md](hci2-computer.md)
 {% endcontent-ref %}
 
