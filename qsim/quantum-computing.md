@@ -47,75 +47,6 @@ description: >-
 สำหรับคนที่มาเรียนเอาทฤษฎี Quantum Computing ไม่อยากเขียนโค้ดหรือเขียนไม่เป็น สามารถเข้าไปลองสร้าง Quantum Circuit ไปพร้อมกับบทความได้ที่ [Quirk: Quantum Circuit Simulator (https://algassert.com/quirk)](https://algassert.com/quirk)
 {% endhint %}
 
-## Project Setup
-
-เนื่องจากการทำ Quantum Circuit ต้องใช้การคำนวณ Matrix อย่างมหาศาล และต้องใช้ Complex Number อีกด้วย ดังนั้น เราจะมาใช้ library `math.js` กัน
-
-เอาล่ะ ว่าแต่พวกนายอยากจะรันโปรเจกต์แบบไหนกันล่ะ?
-
-{% tabs %}
-{% tab title="รันด้วย Browser" %}
-1\. สร้างไฟล์ `index.html` มาก่อน แล้วใส่โค้ดนี้ไป
-
-{% code title="index.html" %}
-```html
-<script src="https://cdn.jsdelivr.net/npm/mathjs@10.1.1/lib/browser/math.min.js"></script>
-<script src="script.js"></script>
-```
-{% endcode %}
-
-2\. พอเสร็จแล้ว ก็สร้างไฟล์ชื่อ `script.js` มาไว้ข้างๆ แล้วลองใส่คำสั่งข้างล่างดู
-
-{% code title="script.js" %}
-```javascript
-console.log("Hello", math.sqrt(-1).toString())
-```
-{% endcode %}
-
-3\. หลังจากนั้น ลองเข้าไฟล์ `index.html` แล้วเปิด Developer Console ขึ้นมา (ถ้าใช้ Chrome คำสั่งคือ `Ctrl+Shift+J`)
-
-4\. ถ้าเห็นข้อความว่า "`Hello i`" แสดงว่าถูก ไปต่อได้
-
-หลังจากนี้ ให้แก้ไขโค้ดในไฟล์ `script.js` แล้วพอเซฟ ก็ refresh หน้า `index.html` ใหม่
-{% endtab %}
-
-{% tab title="รันด้วย Node.js" %}
-1\. รันคำสั่ง `npm init` (หรือ `yarn init`) แล้ว setup อะไรให้เรียบร้อยก่อน
-
-2\. เสร็จแล้ว ลง math.js ด้วยคำสั่ง `npm install mathjs` (`yarn add mathjs`)
-
-3\. ข้างในไฟล์ `package.json` ให้เพิ่ม field ไป 2 ตัว คือ
-
-{% code title="package.json" %}
-```json
-{
-  "scripts": {
-    "start": "node index.js"
-  },
-  "type": "module"
-}
-```
-{% endcode %}
-
-4\. สร้างไฟล์ `index.js` โดยใส่โค้ดข้างในไว้ว่า
-
-{% code title="index.js" %}
-```javascript
-import * as math from "mathjs";
-console.log("Hello", math.sqrt(-1).toString())
-```
-{% endcode %}
-
-5\. ลองรันโปรเจกต์ด้วยคำสั่ง `npm start` (`yarn start`)
-
-6\. ถ้าเห็นข้อความว่า "`Hello i`" แสดงว่าถูก ไปต่อได้
-
-หลังจากนี้ ให้แก้ไขโค้ดในไฟล์ `index.js` แล้วพอเซฟ ก็รันด้วยคำสั่ง `npm start` (`yarn start`)
-{% endtab %}
-{% endtabs %}
-
-หลังจาก setup Project กันเสร็จแล้ว เราก็มาเริ่มทำกันได้เลย โก!
-
 ## Vector, Matrix, และ Basis
 
 ก่อนที่จะไปทำ Simulator เรามาทบทวนเนื้อหาพื้นฐานกันก่อน ถ้าเราย้อนกลับไปในวิชาฟิสิกส์ ม.ปลาย เราสามารถเขียนเวกเตอร์อันหนึ่งให้ออกมาในรูปองค์ประกอบของแกนได้ คือ
@@ -193,7 +124,76 @@ $$
 Loosely speaking, คือสถานะทางควอนตัมต้อง Normalized คือมีสมบัติว่า $$\braket{\psi\vert\psi}=|\alpha|^2+|\beta|^2=1$$ (อย่าลืมว่า $$\alpha\isin\cnums,\beta\isin\cnums$$ ดังนั้น $$|z|=\sqrt{\Re(z)^2+\Im(z)^2};z\in\mathbb{C}$$) ถ้าไม่อย่างนั้นสถานะจะถือว่าเป็น Mixed State และต้องทำการ Normalize ก่อน
 {% endhint %}
 
-โอเค เราไปเขียนโค้ดเพื่อสร้าง $$\ket{0}$$ กับ $$\ket{1}$$ กันก่อนดีกว่า
+โอเค ทบทวนพื้นฐานที่ต้องรู้เสร็จแล้ว เราไปเขียนโค้ดเพื่อสร้าง Simulator ของเรากันเลย!
+
+## Project Setup
+
+เนื่องจากการทำ Quantum Circuit ต้องใช้การคำนวณ Matrix อย่างมหาศาล และต้องใช้ Complex Number อีกด้วย ดังนั้น เราจะมาใช้ library `math.js` กัน
+
+เอาล่ะ ว่าแต่พวกนายอยากจะรันโปรเจกต์แบบไหนกันล่ะ?
+
+{% tabs %}
+{% tab title="รันด้วย Browser" %}
+1\. สร้างไฟล์ `index.html` มาก่อน แล้วใส่โค้ดนี้ไป
+
+{% code title="index.html" %}
+```html
+<script src="https://cdn.jsdelivr.net/npm/mathjs@10.1.1/lib/browser/math.min.js"></script>
+<script src="script.js"></script>
+```
+{% endcode %}
+
+2\. พอเสร็จแล้ว ก็สร้างไฟล์ชื่อ `script.js` มาไว้ข้างๆ แล้วลองใส่คำสั่งข้างล่างดู
+
+{% code title="script.js" %}
+```javascript
+console.log("Hello", math.sqrt(-1).toString())
+```
+{% endcode %}
+
+3\. หลังจากนั้น ลองเข้าไฟล์ `index.html` แล้วเปิด Developer Console ขึ้นมา (ถ้าใช้ Chrome คำสั่งคือ `Ctrl+Shift+J`)
+
+4\. ถ้าเห็นข้อความว่า "`Hello i`" แสดงว่าถูก ไปต่อได้
+
+หลังจากนี้ ให้แก้ไขโค้ดในไฟล์ `script.js` แล้วพอเซฟ ก็ refresh หน้า `index.html` ใหม่
+{% endtab %}
+
+{% tab title="รันด้วย Node.js" %}
+1\. รันคำสั่ง `npm init` (หรือ `yarn init`) แล้ว setup อะไรให้เรียบร้อยก่อน
+
+2\. เสร็จแล้ว ลง math.js ด้วยคำสั่ง `npm install mathjs` (`yarn add mathjs`)
+
+3\. ข้างในไฟล์ `package.json` ให้เพิ่ม field ไป 2 ตัว คือ
+
+{% code title="package.json" %}
+```json
+{
+  "scripts": {
+    "start": "node index.js"
+  },
+  "type": "module"
+}
+```
+{% endcode %}
+
+4\. สร้างไฟล์ `index.js` โดยใส่โค้ดข้างในไว้ว่า
+
+{% code title="index.js" %}
+```javascript
+import * as math from "mathjs";
+console.log("Hello", math.sqrt(-1).toString())
+```
+{% endcode %}
+
+5\. ลองรันโปรเจกต์ด้วยคำสั่ง `npm start` (`yarn start`)
+
+6\. ถ้าเห็นข้อความว่า "`Hello i`" แสดงว่าถูก ไปต่อได้
+
+หลังจากนี้ ให้แก้ไขโค้ดในไฟล์ `index.js` แล้วพอเซฟ ก็รันด้วยคำสั่ง `npm start` (`yarn start`)
+{% endtab %}
+{% endtabs %}
+
+หลังจาก setup Project เสร็จแล้ว เรามาสร้าง $$\ket{0}$$ กับ $$\ket{1}$$ กันเถอะ
 
 ## สร้าง Quantum Basis States
 
@@ -211,7 +211,7 @@ const ket_1 = math.matrix([[0], [1]]);
 * `math.matrix([1, 0])` = $$\begin{bmatrix}1,0\end{bmatrix}$$
 {% endhint %}
 
-ลอง console.log ออกมาดูกันว่าได้อะไรออกมานะ
+ลอง console.log ออกมาดูกันว่าจะได้อะไรออกมานะ
 
 ```javascript
 // อย่าลืม `.toString()` จะได้อ่านง่ายๆ
@@ -223,7 +223,7 @@ console.log("|1>", ket_1.toString())
 คลิก Run Pen เพื่อดูผลลัพธ์ที่ได้
 {% endembed %}
 
-เย้ ตอนนี้เราได้ Basis State แล้ว ไปต่อกันเลย!
+เย้ ตอนนี้เราได้ Basis State กันแล้ว ไปต่อกันเลย!
 
 ## สร้าง Gate จาก Matrix
 
