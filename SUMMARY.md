@@ -17,9 +17,9 @@
   * [\[HCI1\] Human](my-subjects/hci/hci1-human.md)
   * [\[HCI2\] Computer](my-subjects/hci/hci2-computer.md)
 
-## Quantum computing simulator <a href="#qsim" id="qsim"></a>
+## Quantum Computing <a href="#qcom" id="qcom"></a>
 
-* [🛸 อยากรู้พื้นฐาน Quantum Computing? งั้นก็ลองสร้างมันขึ้นมาสิ!](qsim/quantum-computing.md)
+* [🛸 อยากรู้พื้นฐาน Quantum Computing? งั้นก็ลองสร้างมันขึ้นมาสิ!](qcom/qsim.md)
 
 ## โน้ตดนตรี <a href="#scores" id="scores"></a>
 
