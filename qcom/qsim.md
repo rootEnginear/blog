@@ -318,7 +318,7 @@ console.log(execute(ket_0, X, I, toString));
 
 สุดยอด ตอนนี้เราได้ Gate มาแล้ว 2 ตัวโดยการใช้ Matrix เราลองไปดู Gate อื่นๆ กันต่อเลย!
 
-## สร้าง Gate จาก Universal Gate
+## สร้าง Gate จาก Universal Gate <a href="#universalgate" id="universalgate"></a>
 
 Quantum Gate ทุกตัวสามารถสร้างได้จาก Universal Gate $$\mathrm{U}(\theta,\phi,\lambda)$$ ที่มีสมการว่า
 
@@ -665,7 +665,7 @@ console.log(runAndAggregate(ket_0, H, M(0))(1000));
 
 {% embed url="https://www.youtube.com/watch?v=LKq5nV89hlM" %}
 
-## ขยับขยายจำนวน Qubit
+## ขยับขยายจำนวน Qubit <a href="#expandingqubits" id="expandingqubits"></a>
 
 หลังจากที่เราทำวงจรขนาด 1 qubit กันมาได้แล้ว เรามาลองเพิ่มจำนวน qubit ในระบบกัน โดยวิธีการเพิ่มเข้าไปก็ง่ายมาก คือใช้สิ่งที่เรียกว่า **"Tensor Product"**
 
@@ -994,7 +994,7 @@ console.log(runAndAggregate(ket_000, HHH, M(0), M(1), M(2))(1000));
 
 ง่ายใช่มะ เราสามารถใช้วิธีนี้กับวงจรขนาดกี่ Qubit ก็ได้ แต่ข้อควรระวังก็คือ ขนาดของ matrix จะใหญ่ขึ้นแบบ $$2^n$$ ดังนั้นระวังคอมไหม้กันด้วยนาจา
 
-## เพิ่ม Control เข้ากับ Gate อื่นๆ
+## เพิ่ม Control เข้ากับ Gate อื่นๆ <a href="#addingcontrols" id="addingcontrols"></a>
 
 ก่อนหน้านี้เราเรียนรู้เกี่ยวกับ Controlled-not Gate ไปแล้ว ซึ่งในความเป็นจริง เราสามารถเพิ่ม Control เข้ากับ Gate อะไรก็ได้ ไม่จำเป็นต้องเป็น $$\mathrm{X}$$ gate อย่างเดียว ในส่วนนี้ เราจะมาลองสร้าง Controlled-controlled-not Gate หรือรู้จักกันในชื่อทั่วไปว่า Toffoli Gate ($$\mathrm{TOFF}$$) ด้วยวิธีนี้กัน โดยก่อนอื่น เรามาทำกันในทฤษฎีก่อน แล้วค่อยมาโค้ดกัน โดย $$\mathrm{TOFF}$$ gate มีหน้าตาและ matrix แบบนี้
 
@@ -1102,7 +1102,7 @@ console.log(runAndAggregate(ket_000, IHX, SW13, CCX321, SW13, M(0), M(1), M(2))(
 
 ![Hmm... เราจะทำด้วยวิธีใดได้บ้างนะ?](../.gitbook/assets/q\_h1cx13m123.svg)
 
-## จบแล้วทำไรต่อ?
+## จบแล้วทำไรต่อ? <a href="#whatsnext" id="whatsnext"></a>
 
 ยินดีกับท่านผู้เจริญทุกท่านที่สามารถเรียนรู้และทนอ่านมาได้จนจบบทความนี้ ถึงแม้ว่าในปัจจุบันนี้ควอนตัมคอมพิวเตอร์จะยังดูเป็นเรื่องที่ล้ำเกินยุค หรือค่อนข้างไกลตัวไปสักหน่อย แต่อย่างน้อยทุกท่านที่เข้ามาอ่านก็เปิดใจพร้อมรับสิ่งใหม่ๆ และถึงแม้ว่าจะอ่านแล้วเข้าใจหรือไม่เข้าใจ แค่เปิดใจก็ถือว่าเป็นสิ่งที่ดีแล้ว ขอบคุณทุกท่านมากๆ ค่ะ
 
