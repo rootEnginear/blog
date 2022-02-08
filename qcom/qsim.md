@@ -19,12 +19,11 @@ description: >-
 {% endcontent-ref %}
 
 {% hint style="warning" %}
-**บทความนี้ ประกอบไปด้วยคณิตศาสตร์และภาษา JavaScript** ซึ่งจริงๆ คนอ่านไม่จำเป็นจะต้องเก่งเทพหรือรู้เรื่องเกี่ยวกับสองอย่างนี้มากหรอก แต่ถ้ามีพื้นฐานเหล่านี้ก่อนอ่านสักหน่อยจะดีมาก
+**บทความนี้ ประกอบไปด้วยคณิตศาสตร์และภาษา JavaScript** ซึ่งจริงๆ แล้วคนอ่าน<mark style="color:orange;">**ไม่จำเป็นจะต้องรู้ทั้งสองอย่างก็ได้ อ่านไปเพลินๆ**</mark> แต่ถ้าอยากทำความเข้าใจกับคณิตศาสตร์ให้มากขึ้น หรืออยากเขียนโค้ดตามไปด้วย แนะนำว่าถ้ามีพื้นฐานเหล่านี้ก่อนอ่านสักหน่อยจะดีมาก:
 
-* **JavaScript:** เขียนได้ รู้จัก Array Method (`filter`, `map`, `reduce`, etc.) รู้จักการ Spread รู้จัก Higher-order Function รู้ว่าการ Currying คืออะไร
+* **JavaScript:** รู้จัก Array Method (`filter`, `map`, `reduce`, etc.) รู้จักการ Spread รู้จัก Higher-order Function รู้ว่าการ Currying คืออะไร
 * **Linear Algebra:** ถ้าฟังภาษาอังกฤษได้แนะนำซีรีส์ Essence of linear algebra ของ 3Blue1Brown ([https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE\_ab](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE\_ab))
 * **Complex Number:** มาทบทวนเนื้อหา ม.5 กันค่ะ [http://www.tewlek.com/anet\_complex.html](http://www.tewlek.com/anet\_complex.html)
-* ต้องเป็นท่านผู้เจริญซึ่งมากไปด้วยปัญญา
 {% endhint %}
 
 ## Quantum Circuit คือ?
@@ -38,7 +37,7 @@ description: >-
 * **Registers:** ถ้าพูดกันแบบ Digital Circuit ก็จะหมายถึงหน่วยความจำอะไรกันแบบนี้ใช่ไหม แต่ถ้าเป็น Quantum เราจะพูดถึงกลุ่มของเส้น Qubit หรือ Bit กัน ก็คือเส้นตามแนวนอนที่เห็นกันนั่นเอง โดย `q` ย่อมาจาก Quantum Register และ `c` มาจากคำว่า Classical Register
 * **Gates:** ก็คือสิ่งที่แก้ไขให้ค่าใน Register เปลี่ยนแปลงไป ถ้าใน Digital Circuit เราก็อาจจะคุ้นกับ Logic Gate เช่น `AND`, `OR`, `NOT`, `XOR`, etc. ส่วนใน Quantum เราก็จะมี Quantum Gate กันมากมาย เช่น `X`, `Y`, `Z`, `Hadamard`, etc. ซึ่งในภาพก็คือสัญลักษณ์ที่วางอยู่บนเส้น Register นั่นเอง
 
-จากแผนภาพ เราจะเห็นว่าการเขียนวงจรจะเขียนจากซ้ายไปขวา บนลงล่าง โดยเราจะเขียน Quantum Register ไว้ข้างบน แล้วเขียน Classical Register ไว้ด้านล่าง (สังเกตว่า Classical Register จะเป็นเส้นคู่ทั้งหมด) อย่างเส้นที่อยู่บนสุด ($$q_0$$) ก็คือคิวบิต 0 เส้นล่างสุด ($$c_2$$) ก็คือบิต 2 แล้วเราจะทำการเปลี่ยนแปลง Qubit ยังไง ก็ใส่ Quantum Gate ทับเส้นไปเลย หลังจากที่เราทำการเปลี่ยนแปลง Qubit แล้ว เราก็จะทำการวัดหรือ Measurement (สัญลักษณ์มิเตอร์ ![](../.gitbook/assets/meter.png)) qubit ที่เราต้องการไปยัง bit ที่เราต้องการ (โดยทั่วไปก็วัดลงตรงๆ เลย $$q_0$$ ไป $$c_0$$, $$q_1$$ ไป $$c_1$$)
+จากแผนภาพ เราจะเห็นว่าการเขียนวงจรจะเขียนจากซ้ายไปขวา บนลงล่าง โดยเราจะเขียน Quantum Register ไว้ข้างบน แล้วเขียน Classical Register ไว้ด้านล่าง (สังเกตว่า Classical Register จะเป็นเส้นคู่ทั้งหมด) อย่างเส้นที่อยู่บนสุด ($$q_0$$) ก็คือคิวบิต 0 เส้นล่างสุด ($$c_2$$) ก็คือบิต 2 แล้วเราจะทำการเปลี่ยนแปลง Qubit ยังไง ก็ใส่ Quantum Gate ทับเส้นไปเลย หลังจากที่เราทำการเปลี่ยนแปลง Qubit แล้ว เราก็จะทำการวัดหรือ Measurement (สัญลักษณ์มิเตอร์ ![](../.gitbook/assets/meter.png)) qubit ที่เราต้องการไปยัง bit ที่เราต้องการ (โดยทั่วไปก็วัดลงตรงๆ เลย $$q_0\to c_0, q_1\to c_1$$)
 
 มาถึงตรงนี้หลายๆ คนคงสงสัย "เอ้า ในเมื่อมี Quantum Gate แล้ว ทำไมยังต้องวัดกลับมาอีก? ประมวลผลไปด้วยเครื่องควอนตัมคอมพิวเตอร์เลยไม่ได้หรอ?" คำตอบคือ เราจะใช้เครื่องควอนตัมคอมพิวเตอร์ในการแก้ปัญหาบางปัญหาที่ต้องพึ่งพาคุณสมบัติทางควอนตัมเท่านั้น บางปัญหานั้นก็สามารถทำได้หรือทำได้ดีกว่าด้วยเครื่องคอมพิวเตอร์ธรรมดา (Classical Computer) ที่เราใช้กันอยู่ ดังนั้น เราจึงมักจะทำวงจรควอนตัมมาเพื่อแก้ปัญหาบางอย่างเท่านั้น แล้วเอาข้อมูลที่ได้มาประมวลผลต่อด้วยคอมพิวเตอร์ปกติอีกที
 
@@ -47,7 +46,7 @@ description: >-
 ทั้งหมดที่เล่ามาก็คือ Quantum Circuit แบบคร่าวๆ ว่าคืออะไร และต่อจากนี้เราจะมาเขียนตัว Simulate เจ้านี่กัน ตั้งแต่การตั้ง Qubit การใส่ Gate ต่างๆ และการวัดผลลัพธ์ออกมาเลย
 
 {% hint style="info" %}
-สำหรับคนที่มาเรียนเอาทฤษฎี Quantum Computing ไม่อยากเขียนโค้ดหรือเขียนไม่เป็น สามารถเข้าไปลองสร้าง Quantum Circuit ไปพร้อมกับบทความได้ที่ [Quirk: Quantum Circuit Simulator (https://algassert.com/quirk)](https://algassert.com/quirk)
+ในช่วงหลังจากนี้ จะมีการสอนทฤษฎีไปพร้อมๆ กับการเขียนโค้ด สำหรับคนที่มาอ่านเพลินๆ หรือมาเรียนเอาทฤษฎี Quantum Computing อย่างเดียว อาจจะเขียนโค้ดไม่เป็นหรือไม่อยากเขียนโค้ด ก็สามารถอ่านไปเพลินๆ โดยไม่ต้องสนใจโค้ดได้เลยจ้า ส่วนใครอยากต่อ Quantum Circuit ไปพร้อมๆ กับบทความ สามารถไปต่อได้ที่ [Quirk: Quantum Circuit Simulator (https://algassert.com/quirk)](https://algassert.com/quirk)
 {% endhint %}
 
 ## Vector, Matrix, และ Basis
@@ -121,7 +120,7 @@ $$
 สมมติว่ามีสถานะ $$\ket{\psi}$$ ตัวที่ยกตัวอย่างไป สถานะดังกล่าวจะต้องมีสมบัติว่า $$\braket{\psi\vert\psi}=|\alpha|^2+|\beta|^2=1$$ ซึ่งสถานะที่มีสมบัตินี้จะเรียกว่า Pure State ถ้าสถานะนั้นไม่มีสมบัตินี้ จะถือว่าเป็น Mixed State และต้องทำการ normalize ก่อน
 
 {% hint style="info" %}
-เวลาเราหา Absolute ของ Complex Number เช่น สมมติเรามี $$z=a+bi$$ เราจะได้ว่า $$|z|=\sqrt{\Re(z)^2+\Im(z)^2}=\sqrt{a^2+b^2}$$
+เวลาเราหา Absolute ของ Complex Number เช่น สมมติว่าเรามี $$z=a+bi$$ เราจะได้ว่า $$|z|=\sqrt{\Re(z)^2+\Im(z)^2}=\sqrt{a^2+b^2}$$
 {% endhint %}
 
 โอเค ตอนนี้เราก็ทบทวนพื้นฐานที่ต้องรู้กันเสร็จแล้ว เราไปเขียนโค้ดเพื่อสร้าง Simulator ของเรากันเลย!
@@ -1030,6 +1029,8 @@ Direct Sum คือการเอา matrix สองตัว มาวาง
 $$
 \begin{align*} \underbrace{ \begin{bmatrix}1&0\\0&1\end{bmatrix} }_{\mathbb{I}_{2^1}}\oplus\underbrace{ \begin{bmatrix}0&1\\1&0\end{bmatrix} }_{\mathrm{X}}=\underbrace{ \begin{bmatrix}1&0&0&0\\0&1&0&0\\0&0&0&1\\0&0&1&0\end{bmatrix} }_{\mathrm{CNOT}'} \end{align*}
 $$
+
+![](../.gitbook/assets/q\_cx2.svg)
 
 ตอนนี้เราได้ $$\mathrm{CNOT}'$$ มาแล้ว เราจะเพิ่ม Controlled เข้าไปอีก 1 ตัว
 

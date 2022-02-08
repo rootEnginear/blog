@@ -28,8 +28,8 @@
 ## Contacts
 
 * [Portfolio](https://rootenginear.github.io)
-* [LinkedIn](https://www.linkedin.com/in/suthep-ch/)
 * [GitHub](https://github.com/rootEnginear)
+* [LinkedIn](https://www.linkedin.com/in/suthep-ch/)
 
 ***
 
