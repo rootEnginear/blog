@@ -262,7 +262,13 @@ const x_matrix = math.matrix([
 โดยวิธีการเอา Gate พวกนี้มาเปลี่ยนสถานะ Qubit คือให้เรานำ gate เหล่านี้ มาคูณกับสถานะที่เรามี เช่น ถ้าเราต้องการเอา $$\mathrm{I}$$ gate มาเปลี่ยนสถานะ $$\ket{0}$$ เราก็จะได้ว่า
 
 $$
-\begin{align*} \mathrm{I}\ket{0}&=\begin{bmatrix}1&0\\0&1\end{bmatrix}\begin{bmatrix}1\\0\end{bmatrix}\\ \mathrm{I}\ket{0}&=\begin{bmatrix}1\\0\end{bmatrix}=\ket{0} \end{align*}
+\begin{align*}
+\mathrm{I}\ket{0}&=
+\overbrace{\begin{bmatrix}1&0\\0&1\end{bmatrix}}^{\mathrm{I}}
+\,
+\overbrace{\begin{bmatrix}1\\0\end{bmatrix}}^{\ket{0}}
+\\
+\mathrm{I}\ket{0}&=\begin{bmatrix}1\\0\end{bmatrix}=\ket{0} \end{align*}
 $$
 
 ![ ในรูปของ Quantum Circuit](../.gitbook/assets/q\_i.svg)
@@ -272,7 +278,12 @@ $$
 คราวนี้ถ้าสมมติเราจะทำสองครั้ง เช่น เอา $$\mathrm{X}$$ gate มาเปลี่ยนสถานะ $$\ket{0}$$ แล้วนำผลลัพธ์ไปทำกับ $$\mathrm{I}$$ gate อีกเราก็จะได้ว่า
 
 $$
-\begin{align*} \mathrm{IX}\ket{0}&=\begin{bmatrix}1&0\\0&1\end{bmatrix}\begin{bmatrix}0&1\\1&0\end{bmatrix}\begin{bmatrix}1\\0\end{bmatrix}\\ &=\begin{bmatrix}1&0\\0&1\end{bmatrix}\begin{bmatrix}0\\1\end{bmatrix}\\ \mathrm{IX}\ket{0}&=\begin{bmatrix}0\\1\end{bmatrix}=\ket{1} \end{align*}
+\begin{align*}
+\mathrm{IX}\ket{0}&=
+\overbrace{\begin{bmatrix}1&0\\0&1\end{bmatrix}}^{\mathrm{I}}\,
+\overbrace{\begin{bmatrix}0&1\\1&0\end{bmatrix}}^{\mathrm{X}}\,
+\overbrace{\begin{bmatrix}1\\0\end{bmatrix}}^{\ket{0}}\\
+&=\begin{bmatrix}1&0\\0&1\end{bmatrix}\begin{bmatrix}0\\1\end{bmatrix}\\ \mathrm{IX}\ket{0}&=\begin{bmatrix}0\\1\end{bmatrix}=\ket{1} \end{align*}
 $$
 
 ![ ในรูปของ Quantum Circuit](../.gitbook/assets/q\_xi.svg)
@@ -429,7 +440,7 @@ console.log(execute(ket_0, H, Z, H, toString)); // Should get |1>
 
 ### Normalizing State
 
-วิธีการ normalize State เราสามารถทำได้โดยการนำสถานะนั้น (เช่น $$\ket{\psi}=\alpha\ket{0}+\beta\ket{1};|\alpha|^2+|\beta|^2\neq1$$) มาหารด้วย square root ของ norm ของสถานะนั้น คือ
+วิธีการ normalize State เราสามารถทำได้โดยการนำสถานะนั้น (เช่น $$\ket{\psi}=\alpha\ket{0}+\beta\ket{1};|\alpha|^2+|\beta|^2\,{\color{red}\neq1}$$) มาหารด้วย square root ของ norm ของสถานะนั้น คือ
 
 $$
 \ket{\psi'}=\frac{\ket{\psi}}{\sqrt{\braket{\psi\vert\psi}}}
@@ -742,7 +753,7 @@ Controlled-not Gate ($$\mathrm{CNOT}$$) เป็น Gate ชนิดหนึ�
 โดยมันจะทำการสลับสถานะ $$\ket{01}$$ กับ $$\ket{11}$$ ใน State Vector ที่ถูกทำ
 
 $$
-\ket{\psi}=\begin{bmatrix}\alpha\\\beta\\\gamma\\\delta\end{bmatrix}\to\mathrm{CNOT}\ket{\psi}=\begin{bmatrix}\alpha\\\delta\\\gamma\\\beta\end{bmatrix}
+\ket{\psi}=\begin{bmatrix}\alpha\\{\color{red}\beta}\\\gamma\\{\color{green}\delta}\end{bmatrix}\to\mathrm{CNOT}\ket{\psi}=\begin{bmatrix}\alpha\\{\color{green}\delta}\\\gamma\\{\color{red}\beta}\end{bmatrix}
 $$
 
 โดย $$\mathrm{CNOT}$$ มี matrix คือ
