@@ -12,6 +12,10 @@
 [hci2-computer.md](hci2-computer.md)
 {% endcontent-ref %}
 
+{% content-ref url="hci3-interaction.md" %}
+[hci3-interaction.md](hci3-interaction.md)
+{% endcontent-ref %}
+
 {% content-ref url="hci4-the-basics-of-interaction-design.md" %}
 [hci4-the-basics-of-interaction-design.md](hci4-the-basics-of-interaction-design.md)
 {% endcontent-ref %}

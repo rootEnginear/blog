@@ -1,8 +1,8 @@
 ---
-description: ข้อผิดพลาดและการจัดการกับข้อผิดพลา
+description: ข้อผิดพลาดและการจัดการกับข้อผิดพลาด
 ---
 
-# \[HCI6] Error and Error Handling
+# \[HCI6] Error & Error Handling
 
 ## Types of Errors
 
