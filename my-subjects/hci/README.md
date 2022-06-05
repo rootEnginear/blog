@@ -28,6 +28,10 @@
 [hci6-error-and-error-handling.md](hci6-error-and-error-handling.md)
 {% endcontent-ref %}
 
+{% content-ref url="hci7-7-principles-of-universal-design.md" %}
+[hci7-7-principles-of-universal-design.md](hci7-7-principles-of-universal-design.md)
+{% endcontent-ref %}
+
 {% content-ref url="hci8-storyboard.md" %}
 [hci8-storyboard.md](hci8-storyboard.md)
 {% endcontent-ref %}
