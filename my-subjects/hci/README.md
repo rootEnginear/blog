@@ -36,6 +36,10 @@
 [hci8-storyboard.md](hci8-storyboard.md)
 {% endcontent-ref %}
 
+{% content-ref url="hci9-representations-and-information-visualization.md" %}
+[hci9-representations-and-information-visualization.md](hci9-representations-and-information-visualization.md)
+{% endcontent-ref %}
+
 {% content-ref url="hci11-prototyping.md" %}
 [hci11-prototyping.md](hci11-prototyping.md)
 {% endcontent-ref %}

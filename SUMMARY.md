@@ -22,6 +22,7 @@
   * [\[HCI6\] Error & Error Handling](my-subjects/hci/hci6-error-and-error-handling.md)
   * [\[HCI7\] 7 Principles of Universal Design](my-subjects/hci/hci7-7-principles-of-universal-design.md)
   * [\[HCI8\] Storyboard](my-subjects/hci/hci8-storyboard.md)
+  * [\[HCI9\] Representations and Information Visualization](my-subjects/hci/hci9-representations-and-information-visualization.md)
   * [\[HCI11\] Prototyping](my-subjects/hci/hci11-prototyping.md)
   * [\[HCI12\] UX Writing](my-subjects/hci/hci12-ux-writing.md)
 
