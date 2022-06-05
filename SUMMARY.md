@@ -20,6 +20,7 @@
   * [\[HCI5\] Design Rules & Principles](my-subjects/hci/hci5-design-rules-and-principles.md)
   * [\[HCI6\] Error & Error Handling](my-subjects/hci/hci6-error-and-error-handling.md)
   * [\[HCI8\] Storyboard](my-subjects/hci/hci8-storyboard.md)
+  * [\[HCI11\] Prototyping](my-subjects/hci/hci11-prototyping.md)
   * [\[HCI12\] UX Writing](my-subjects/hci/hci12-ux-writing.md)
 
 ## Quantum Computing <a href="#qcom" id="qcom"></a>
