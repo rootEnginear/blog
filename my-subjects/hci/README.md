@@ -40,6 +40,10 @@
 [hci9-representations-and-information-visualization.md](hci9-representations-and-information-visualization.md)
 {% endcontent-ref %}
 
+{% content-ref url="hci10-gestalt-theory-and-use-of-colors.md" %}
+[hci10-gestalt-theory-and-use-of-colors.md](hci10-gestalt-theory-and-use-of-colors.md)
+{% endcontent-ref %}
+
 {% content-ref url="hci11-prototyping.md" %}
 [hci11-prototyping.md](hci11-prototyping.md)
 {% endcontent-ref %}

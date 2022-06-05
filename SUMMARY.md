@@ -23,6 +23,7 @@
   * [\[HCI7\] 7 Principles of Universal Design](my-subjects/hci/hci7-7-principles-of-universal-design.md)
   * [\[HCI8\] Storyboard](my-subjects/hci/hci8-storyboard.md)
   * [\[HCI9\] Representations and Information Visualization](my-subjects/hci/hci9-representations-and-information-visualization.md)
+  * [\[HCI10\] Gestalt Theory and Use of Colors](my-subjects/hci/hci10-gestalt-theory-and-use-of-colors.md)
   * [\[HCI11\] Prototyping](my-subjects/hci/hci11-prototyping.md)
   * [\[HCI12\] UX Writing](my-subjects/hci/hci12-ux-writing.md)
 
