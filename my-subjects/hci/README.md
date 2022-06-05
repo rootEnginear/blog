@@ -12,3 +12,18 @@
 [hci2-computer.md](hci2-computer.md)
 {% endcontent-ref %}
 
+{% content-ref url="hci4-the-basics-of-interaction-design.md" %}
+[hci4-the-basics-of-interaction-design.md](hci4-the-basics-of-interaction-design.md)
+{% endcontent-ref %}
+
+{% content-ref url="hci5-design-rules-and-principles.md" %}
+[hci5-design-rules-and-principles.md](hci5-design-rules-and-principles.md)
+{% endcontent-ref %}
+
+{% content-ref url="hci6-error-and-error-handling.md" %}
+[hci6-error-and-error-handling.md](hci6-error-and-error-handling.md)
+{% endcontent-ref %}
+
+{% content-ref url="hci8-storyboard.md" %}
+[hci8-storyboard.md](hci8-storyboard.md)
+{% endcontent-ref %}
