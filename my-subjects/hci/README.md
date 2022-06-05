@@ -27,3 +27,7 @@
 {% content-ref url="hci8-storyboard.md" %}
 [hci8-storyboard.md](hci8-storyboard.md)
 {% endcontent-ref %}
+
+{% content-ref url="hci12-ux-writing.md" %}
+[hci12-ux-writing.md](hci12-ux-writing.md)
+{% endcontent-ref %}
