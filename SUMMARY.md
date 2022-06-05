@@ -18,6 +18,7 @@
   * [\[HCI2\] Computer](my-subjects/hci/hci2-computer.md)
   * [\[HCI4\] The Basics of Interaction Design](my-subjects/hci/hci4-the-basics-of-interaction-design.md)
   * [\[HCI5\] Design Rules & Principles](my-subjects/hci/hci5-design-rules-and-principles.md)
+  * [\[HCI6\] Error and Error Handling](my-subjects/hci/hci6-error-and-error-handling.md)
 
 ## Quantum Computing <a href="#qcom" id="qcom"></a>
 
