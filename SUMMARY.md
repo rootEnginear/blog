@@ -17,6 +17,7 @@
   * [\[HCI1\] Human](my-subjects/hci/hci1-human.md)
   * [\[HCI2\] Computer](my-subjects/hci/hci2-computer.md)
   * [\[HCI4\] The Basics of Interaction Design](my-subjects/hci/hci4-the-basics-of-interaction-design.md)
+  * [\[HCI5\] Design Rules & Principles](my-subjects/hci/hci5-design-rules-and-principles.md)
 
 ## Quantum Computing <a href="#qcom" id="qcom"></a>
 
