@@ -40,7 +40,3 @@
 * [Portfolio](https://rootenginear.github.io)
 * [GitHub](https://github.com/rootEnginear)
 * [LinkedIn](https://www.linkedin.com/in/suthep-ch/)
-
-***
-
-* [📡 RSS](rss.md)
